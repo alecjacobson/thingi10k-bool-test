@@ -76,8 +76,8 @@ namespace igl
 #include <igl/xml/serialize_xml.cpp>
 #ifdef PARALLEL_CGAL
 #else
-template void igl::xml::serialize_xml<Eigen::Matrix<CGAL::Lazy_exact_nt<CGAL::Gmpq>, -1, 3, 0, -1, 3> >(Eigen::Matrix<CGAL::Lazy_exact_nt<CGAL::Gmpq>, -1, 3, 0, -1, 3> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool, bool);
-template void igl::xml::deserialize_xml<Eigen::Matrix<CGAL::Lazy_exact_nt<CGAL::Gmpq>, -1, 3, 0, -1, 3> >(Eigen::Matrix<CGAL::Lazy_exact_nt<CGAL::Gmpq>, -1, 3, 0, -1, 3>&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&);
+template void igl::xml::serialize_xml<Eigen::Matrix<CGAL::Epeck::FT, -1, 3, 0, -1, 3> >(Eigen::Matrix<CGAL::Epeck::FT, -1, 3, 0, -1, 3> const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, bool, bool);
+template void igl::xml::deserialize_xml<Eigen::Matrix<CGAL::Epeck::FT, -1, 3, 0, -1, 3> >(Eigen::Matrix<CGAL::Epeck::FT, -1, 3, 0, -1, 3>&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&);
 #endif
 
 template void igl::xml::serialize_xml<Eigen::Matrix<int, -1, 1, 0, -1, 1> >(Eigen::Matrix<int, -1, 1, 0, -1, 1> const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, bool, bool);

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NUM_PROCS=""
+NUM_PROCS="1"
 
 while getopts "j:" opt; do
     case $opt in

@@ -14,3 +14,9 @@ target_link_libraries(${PROJECT_NAME} PUBLIC igl_copyleft::cgal igl::xml)
 
 add_executable(compare compare.cpp)
 target_link_libraries(compare PUBLIC igl_copyleft::cgal igl::xml)
+
+add_executable(snap snap.cpp)
+target_link_libraries(snap PUBLIC igl_copyleft::cgal igl::xml)
+
+add_executable(resolve resolve.cpp)
+target_link_libraries(resolve PUBLIC igl_copyleft::cgal )
